@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		08A930B0256B90B6009265E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A930AF256B90B6009265E8 /* AppDelegate.swift */; };
 		08A930B2256B90B6009265E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A930B1256B90B6009265E8 /* SceneDelegate.swift */; };
-		08A930B4256B90B6009265E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A930B3256B90B6009265E8 /* ViewController.swift */; };
+		08A930B4256B90B6009265E8 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A930B3256B90B6009265E8 /* LocationVC.swift */; };
 		08A930B7256B90B6009265E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A930B5256B90B6009265E8 /* Main.storyboard */; };
 		08A930B9256B90C4009265E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A930B8256B90C4009265E8 /* Assets.xcassets */; };
 		08A930BC256B90C4009265E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A930BA256B90C4009265E8 /* LaunchScreen.storyboard */; };
+		08C2E420256BBE6B00FD5CBC /* Silom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08C2E41F256BBE6B00FD5CBC /* Silom.ttf */; };
+		08C2E424256BC44400FD5CBC /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2E423256BC44400FD5CBC /* MapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08A930AC256B90B5009265E8 /* MapsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A930AF256B90B6009265E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08A930B1256B90B6009265E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		08A930B3256B90B6009265E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08A930B3256B90B6009265E8 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		08A930B6256B90B6009265E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08A930B8256B90C4009265E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08A930BB256B90C4009265E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08A930BD256B90C4009265E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08C2E41F256BBE6B00FD5CBC /* Silom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Silom.ttf; sourceTree = "<group>"; };
+		08C2E423256BC44400FD5CBC /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		08A930AE256B90B5009265E8 /* MapsProject */ = {
 			isa = PBXGroup;
 			children = (
+				08C2E41D256BB79D00FD5CBC /* Font */,
 				08A930AF256B90B6009265E8 /* AppDelegate.swift */,
 				08A930B1256B90B6009265E8 /* SceneDelegate.swift */,
-				08A930B3256B90B6009265E8 /* ViewController.swift */,
+				08A930B3256B90B6009265E8 /* LocationVC.swift */,
+				08C2E423256BC44400FD5CBC /* MapVC.swift */,
 				08A930B5256B90B6009265E8 /* Main.storyboard */,
 				08A930B8256B90C4009265E8 /* Assets.xcassets */,
 				08A930BA256B90C4009265E8 /* LaunchScreen.storyboard */,
 				08A930BD256B90C4009265E8 /* Info.plist */,
 			);
 			path = MapsProject;
+			sourceTree = "<group>";
+		};
+		08C2E41D256BB79D00FD5CBC /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				08C2E41F256BBE6B00FD5CBC /* Silom.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A930BC256B90C4009265E8 /* LaunchScreen.storyboard in Resources */,
+				08C2E420256BBE6B00FD5CBC /* Silom.ttf in Resources */,
 				08A930B9256B90C4009265E8 /* Assets.xcassets in Resources */,
 				08A930B7256B90B6009265E8 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08A930B4256B90B6009265E8 /* ViewController.swift in Sources */,
+				08A930B4256B90B6009265E8 /* LocationVC.swift in Sources */,
+				08C2E424256BC44400FD5CBC /* MapVC.swift in Sources */,
 				08A930B0256B90B6009265E8 /* AppDelegate.swift in Sources */,
 				08A930B2256B90B6009265E8 /* SceneDelegate.swift in Sources */,
 			);
